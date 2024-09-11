@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue" sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus_Jakarta_Sans"),
+    url(./font/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus_Jakarta_Sans"),
+    url(./font/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus_Jakarta_Sans"),
+    url(./font/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus_Jakarta_Sans"),
+    url(./font/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus_Jakarta_Sans"),
+    url(./font/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus_Jakarta_Sans"),
+    url(./font/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local("Plus_Jakarta_Sans"),
+    url(./font/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf)
+      format("truetype");
+}

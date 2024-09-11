@@ -1,0 +1,30 @@
+.toolbarRoot {
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  width: 435px;
+  height: 68px;
+  margin-left: 146px;
+}
+
+.toolbarButton {
+  flex: 0 0 auto;
+  height: 25px;
+  padding: 0 5px;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 13px;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  width: 1px;
+  height: 25px;
+  background-color: #ccc;
+  margin-left: 10px;
+  margin-right: 10px;
+}

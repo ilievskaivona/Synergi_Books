@@ -1,0 +1,449 @@
+
+.ImageNode__contentEditable {
+    min-height: 20px;
+    border: 0px;
+    resize: none;
+    cursor: text;
+    caret-color: rgb(5, 5, 5);
+    display: block;
+    position: relative;
+    outline: 0px;
+    padding: 10px;
+    user-select: text;
+    font-size: 12px;
+    width: calc(100% - 20px);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  .ImageNode__placeholder {
+    font-size: 12px;
+    color: #888;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 10px;
+    left: 10px;
+    user-select: none;
+    white-space: nowrap;
+    display: inline-block;
+    pointer-events: none;
+  }
+  
+  .image-control-wrapper--resizing {
+    touch-action: none;
+  }
+
+  /* <==== InlineImagee Node   =======> */
+
+
+.InlineImageNode__contentEditable {
+    min-height: 20px;
+    border: 0px;
+    resize: none;
+    cursor: text;
+    caret-color: rgb(5, 5, 5);
+    display: block;
+    position: relative;
+    tab-size: 1;
+    outline: 0px;
+    padding: 10px;
+    user-select: text;
+    font-size: 14px;
+    line-height: 1.4em;
+    width: calc(100% - 20px);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  .InlineImageNode__placeholder {
+    font-size: 12px;
+    color: #888;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    bottom: 10px;
+    left: 10px;
+    user-select: none;
+    white-space: nowrap;
+    display: inline-block;
+    pointer-events: none;
+  }
+  
+  .InlineImageNode_Checkbox:checked,
+  .InlineImageNode_Checkbox:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .InlineImageNode_Checkbox:checked + label,
+  .InlineImageNode_Checkbox:not(:checked) + label {
+    position: absolute;
+    padding-right: 55px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  }
+  
+  .InlineImageNode_Checkbox:checked + label:before,
+  .InlineImageNode_Checkbox:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #666;
+    background: #fff;
+  }
+  
+  .InlineImageNode_Checkbox:checked + label:after,
+  .InlineImageNode_Checkbox:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #222222;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  .InlineImageNode_Checkbox:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  
+  .InlineImageNode_Checkbox:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+  /* <======= index ==========> */
+
+  .dropdown {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    min-height: 40px;
+    background-color: #fff;
+  }
+  
+  .dropdown .item {
+    margin: 0 8px 0 8px;
+    padding: 8px;
+    color: #050505;
+    cursor: pointer;
+    line-height: 16px;
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 0;
+    max-width: 250px;
+    min-width: 100px;
+  }
+  
+  .dropdown .item.fontsize-item,
+  .dropdown .item.fontsize-item .text {
+    min-width: unset;
+  }
+  
+  .dropdown .item .active {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+  }
+  
+  .dropdown .item:first-child {
+    margin-top: 8px;
+  }
+  
+  .dropdown .item:last-child {
+    margin-bottom: 8px;
+  }
+  
+  .dropdown .item:hover {
+    background-color: #eee;
+  }
+  
+  .dropdown .item .text {
+    display: flex;
+    line-height: 20px;
+    flex-grow: 1;
+    min-width: 150px;
+  }
+  
+  .dropdown .item .icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    user-select: none;
+    margin-right: 12px;
+    line-height: 16px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .dropdown .divider {
+    width: auto;
+    background-color: #eee;
+    margin: 4px 8px;
+    height: 1px;
+  }
+
+  
+  button.toolbar-item {
+    border: 0;
+    display: flex;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  button.toolbar-item:disabled {
+    cursor: not-allowed;
+  }
+  
+  button.toolbar-item.spaced {
+    margin-right: 2px;
+  }
+
+
+  /* <===========Image Resizer ===========> */
+
+  .contentEditable span.editor-image {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    user-select: none;
+  }
+  
+  .contentEditable .editor-image img {
+    max-width: 100%;
+    cursor: default;
+  }
+  
+  .contentEditable .editor-image img.focused {
+    outline: 2px solid rgb(60, 132, 244);
+    user-select: none;
+  }
+  
+  .contentEditable .editor-image img.focused.draggable {
+    cursor: grab;
+  }
+  
+  .contentEditable .editor-image img.focused.draggable:active {
+    cursor: grabbing;
+  }
+  
+  .contentEditable .editor-image .image-caption-container .tree-view-output {
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .contentEditable .editor-image .image-caption-container {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-width: 100px;
+    color: #000;
+    overflow: hidden;
+  }
+  
+  .contentEditable .editor-image .image-caption-button {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 100px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .contentEditable .editor-image .image-caption-button:hover {
+    background-color: rgba(60, 132, 244, 0.5);
+  }
+  
+  .contentEditable .editor-image .image-edit-button {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-image: url(/Users/biljanamiceva/Desktop/editor/editor-v2/src/components/editor/images/icons/pencil-fill.svg);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    vertical-align: -0.25em;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .contentEditable .editor-image .image-edit-button:hover {
+    background-color: rgba(60, 132, 244, 0.1);
+  }
+  
+  .contentEditable .editor-image .image-resizer {
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: rgb(60, 132, 244);
+    border: 1px solid #fff;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-n {
+    top: -6px;
+    left: 48%;
+    cursor: n-resize;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-ne {
+    top: -6px;
+    right: -6px;
+    cursor: ne-resize;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-e {
+    bottom: 48%;
+    right: -6px;
+    cursor: e-resize;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-se {
+    bottom: -2px;
+    right: -6px;
+    cursor: nwse-resize;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-s {
+    bottom: -2px;
+    left: 48%;
+    cursor: s-resize;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-sw {
+    bottom: -2px;
+    left: -6px;
+    cursor: sw-resize;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-w {
+    bottom: 48%;
+    left: -6px;
+    cursor: w-resize;
+  }
+  
+  .contentEditable .editor-image .image-resizer.image-resizer-nw {
+    top: -6px;
+    left: -6px;
+    cursor: nw-resize;
+  }
+  
+  .contentEditable span.inline-editor-image {
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contentEditable .inline-editor-image img {
+    max-width: 100%;
+    cursor: default;
+  }
+  
+  .contentEditable .inline-editor-image img.focused {
+    outline: 2px solid rgb(60, 132, 244);
+  }
+  
+  .contentEditable .inline-editor-image img.focused.draggable {
+    cursor: grab;
+  }
+  
+  .contentEditable .inline-editor-image img.focused.draggable:active {
+    cursor: grabbing;
+  }
+  
+  .contentEditable .inline-editor-image .image-caption-container .tree-view-output {
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .contentEditable .inline-editor-image.position-full {
+    margin: 1em 0 1em 0;
+  }
+  
+  .contentEditable .inline-editor-image.position-left {
+    float: left;
+    width: 50%;
+    margin: 1em 1em 0 0;
+  }
+  
+  .contentEditable .inline-editor-image.position-right {
+    float: right;
+    width: 50%;
+    margin: 1em 0 0 1em;
+  }
+  
+  .contentEditable .inline-editor-image .image-edit-button {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 8px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 60px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .contentEditable .inline-editor-image .image-edit-button:hover {
+    background-color: rgba(60, 132, 244, 0.5);
+  }
+  
+  .contentEditable .inline-editor-image .image-caption-container {
+    display: block;
+    background-color: #f4f4f4;
+    min-width: 100%;
+    color: #000;
+    overflow: hidden;
+  }

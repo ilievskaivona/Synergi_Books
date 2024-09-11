@@ -1,0 +1,67 @@
+.placeholder {
+    position: absolute;
+    top: 215px;
+    padding-left: 0px;
+    pointer-events: none;
+}
+.contentEditable {
+    height: 500px;
+    width: 600px;
+    padding: 0 8px;
+    margin-top: 15px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    overflow-y: scroll;
+    outline: none;
+    padding: 50px;
+    margin-left: 370px;
+}
+
+
+.toolbar-wrapper {
+    display: flex;
+}
+
+.sbooks-editor-bold {
+    font-weight: bold;
+}
+
+.sbooks-editor-italic {
+    font-style: italic;
+}
+
+.sbooks-editor-underline {
+    text-decoration: underline;
+}
+
+.sbooks-editor-strikethrough {
+    text-decoration: line-through;
+}
+
+
+.sbooks-editor-h1{
+    font-size: 48px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.sbooks-editor-h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sbooks-editor-h3 {
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.editor-quote {
+    margin: 20;
+    margin-left: 20px;
+    font-size: 15px;
+    color: rgb(101, 103, 107);
+    border-left-color: rgb(206, 208, 212);
+    border-left-width: 4px;
+    border-left-style: solid;
+    padding-left: 16px;
+  }
